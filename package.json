@@ -1,0 +1,23 @@
+{
+  "name": "vs24-playwright-testimine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robinristo78/vs24-playwright-testimine.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/robinristo78/vs24-playwright-testimine/issues"
+  },
+  "homepage": "https://github.com/robinristo78/vs24-playwright-testimine#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^24.9.2"
+  }
+}
