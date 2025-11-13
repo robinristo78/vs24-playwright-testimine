@@ -44,15 +44,15 @@ test('Viimase uudise artikli avaldamise kuupäev', async ({ page }) => {
   await page.waitForTimeout(1000);
 
   // 4. Leia artikli avaldamis kuupäeva
-  const published = await page.locator('div.postMeta').first();
+  const published = page.locator('div.postMeta').first();
 
   // 5. Väljasta konsooli ning tee pilt
-  console.log(published.innerText());
+  console.log(await published.innerText());
   await published.screenshot({ path: 'pictures/latest_published_article_date.png' });
 
 })
 
-test('Leia akadeemilise kalenderi dokument', async ({ page }) => {
+test('Leia akadeemilise kalendri dokument', async ({ page }) => {
   // 1. Mine voco.ee
   await page.goto(voco);
 
